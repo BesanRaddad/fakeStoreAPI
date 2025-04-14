@@ -1,0 +1,372 @@
+.header{
+    padding: 17px;
+    background-color : rgb(99, 88, 99);
+    box-shadow:0px 0px 60px rgb(71, 55, 71);
+    position :sticky;
+    top: 0;
+}
+
+
+.logo img{
+    width : 70px;
+    height : 70px;
+
+}
+.nav{
+    display : flex;
+    flex-direction: row;
+    gap : 25px;
+}
+.nav a{
+    color : white;
+    text-decoration : none;
+    font-size : 20px;
+}
+.nav a:hover{
+    color: rgb(209, 76, 209);
+}
+
+.fakeStore{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 70px 0px;
+    gap: 45px;
+}
+.proto{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    align-items:flex-start;
+    gap: 20px;
+}
+.proto h2{
+    font-size: 30px;
+}
+.proto p{
+    font-size: 17px;
+}
+.portoImg {
+   width: 45%;
+}
+.portoImg img{
+    width: 100%;
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+}
+
+.categorise{
+   margin-bottom: 50px;
+    display: flex;
+    padding: 0 50px;
+}
+
+.category{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    font-size: 20px;
+    background-color: rgb(116, 100, 116);
+    color: white;
+    padding: 40px 60px;
+    width: 300px;
+    border-top-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    transition: 0.2s ease-in-out;
+    font-style: italic;
+    text-transform: capitalize;
+}
+.category a{
+    color: white;
+    text-transform: lowercase;
+}
+.category:hover{
+    transform: scale(105%);
+    color: rgb(71, 7, 71);
+    box-shadow:0 0 30px rgb(71, 55, 71);
+}
+.category:hover a{
+    color: rgb(71, 7, 71);
+}
+.row{
+    gap: 20px;
+}
+
+.products{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+    gap: 40px;
+    padding: 40px 0;
+}
+.products .row{
+    justify-content: center;
+    gap: 50px;
+}
+
+.categoryTitle .proCategory{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 35px 50px;
+    width: 240px;
+    font-size: 30px;
+    border-radius: 50%;
+    box-shadow: 8px 0px 5px rgb(122, 56, 122);
+    font-style: italic;
+    text-transform: capitalize;
+}
+
+.product{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    /*text-align: center;*/
+    flex-direction: column;
+    padding: 10px 30px;
+    gap: 20px;
+    width: 230px;
+    height: 430px;
+    border: 1px solid  rgba(95, 47, 95 ,0.7);
+    border-top-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    transition: 0.2s ease-in-out;
+}
+
+.price{
+    font-size: 18px;
+    background-color: rgb(116, 100, 116);
+    border: none;
+    width: 130px;
+    padding: 10px;
+    border-radius: 6px;
+    color: white;
+}
+.titlePro{
+    font-size:17px;
+    font-weight: 600;
+}
+
+.products .product:hover{
+    transform: scale(105%);
+    color: rgb(71, 7, 71);
+    box-shadow:0 0 30px rgb(71, 55, 71);
+    cursor: pointer;
+}
+.product img{
+    width: 190px;
+    height: 205px;
+}
+.pro{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 30px 0px;
+}
+.pro h2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 35px 50px;
+    width: 300px;
+    font-size: 30px;
+    border-radius: 50%;
+    box-shadow: 8px 0px 5px rgb(122, 56, 122);
+}
+
+
+.loader {
+    width: 48px;
+    height: 48px;
+    border: 5px dotted #000000;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    box-sizing: border-box;
+    animation: rotation 2s linear infinite;
+  }
+  
+  @keyframes rotation {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  
+  .loading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: fixed;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+ 
+.my-modal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    user-select: none;
+}
+.modal-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    width: 380px;
+    height: 390px;
+}
+.my-modal .modal-content{
+    background-color: white;
+    padding: 50px 50px;
+    border-radius: 20px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.9);
+    position: relative;
+}
+ .my-modal img{
+    width: 260px;
+    height: 220px;
+ }
+ .leftBtn, .rightBtn, .closeBtn{
+    position: absolute;
+    color: white;
+ }
+ .leftBtn{
+    left: 26.5%;
+    top: 50%;
+    font-size: 47px;
+ }
+ .rightBtn{
+    right: 26.5%;
+    top: 50%;
+    font-size: 47px;
+ }
+ .closeBtn{
+    top: 66px;
+    right: 27%;
+    font-size: 44px;
+ }
+
+
+
+ .d-none{
+    display: none;
+}
+
+.pagination{
+    display: flex;
+    list-style-type: none;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.pagination button {
+    color: black; 
+    border: 1.5px solid black;
+    border-radius: 50%;
+    padding: 3px 8px;
+    cursor: pointer;
+}
+.pagination button:disabled{
+    cursor: not-allowed;
+}
+button.active {
+     color: white;
+     background-color: rgba(0, 0, 0, 0.6);
+}
+
+@media (max-width:1160Px){
+    .container{
+        width:calc(100% - 50px) !important;
+    }
+}
+@media (max-width:1000Px) {
+    .portoImg {
+        width: 45%;
+     }
+     .proto{
+        width: 40%;
+     }
+    .category{
+       width: 250px;
+     }
+}
+@media (max-width:900Px){
+    .categorise .row{
+       justify-content: center;
+    }
+}
+@media (max-width:582Px) {
+    .portoImg {
+        width: 100%;
+     }
+     .proto{
+        width: 100%;
+     }
+    .category{
+       width: 300px;
+       padding: 40px 16px;
+     }
+     .logo img{
+        width : 45px;
+        height : 45px;
+    
+    }
+}
+@media (max-width:400Px){
+    .container{
+        width:calc(100%) !important;
+    }
+}
+@media (max-width:457Px){
+    .modal-content{
+        width: 300px;
+        height: 350px;
+    }
+    .my-modal .modal-content{
+        padding: 7px 10px;
+    }
+     .my-modal img{
+        width: 220px;
+        height: 200px;
+     }
+     .leftBtn{
+        left: 4px;
+        top: 50%;
+        font-size: 40px;
+     }
+     .rightBtn{
+        right: 4px;
+        top: 50%;
+        font-size: 40px;
+     }
+     .closeBtn{
+        top: 23%;
+        right: 5px;
+        font-size: 38px;
+     }
+}
